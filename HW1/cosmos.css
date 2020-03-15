@@ -1,11 +1,11 @@
 body {
   background: rgba(0, 0, 0, .1);
-  margin: 10em; /* reset margin*/
-  background-image: url("./image/1.jpg");
+ /* margin: 10em;  reset margin*/
+  background-image: url("./image/1-1.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-position: center,top;
+  background-size: cover;
 }
 
 img{
@@ -27,4 +27,38 @@ img{
   left: 50%;
   z-index: -99;
 }
-    
+
+#arrow {
+ position:fixed;
+ top:50px;
+ left:60px;
+}
+
+#manu {
+  font-family:'abel';
+  font-size:30px;
+  color:white;
+  position:fixed;
+  top:50px;
+  right:80px;
+}
+
+#scroll {
+  position:fixed;
+  bottom:50px;
+  left:30px;
+}
+
+#scroll span{
+  font-family:'Abel';
+  font-size:30px;
+  position:absolute;
+  color:white;
+  bottom:70px;
+  left:23px;
+}
+
+#cover {
+  width:750px;
+  height:auto;
+}

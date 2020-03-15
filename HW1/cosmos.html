@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1",name="viewport">
+    <title>COSMOS</title>
+    <link href="cosmos.css" rel="stylesheet" type="text/css">
+		<script>
+			$(function () {
+
+					resize_tab();
+			});
+
+			$(window).resize(function () {
+					resize_tab();
+			}).resize();
+
+			function resize_tab() {
+
+        var viewportWidth = $(window).innerWidth();
+        var viewportHeight = $(window).innerHeight();
+
+        var width = $('#background').width();
+        var height = $('#background').height();
+
+
+        if ((viewportWidth / viewportHeight) > (width / height)) {
+
+            $('#background').css({
+                'width': '100%',
+                'height': 'auto',
+                'margin-left': 0 - width / 2,
+                'margin-top': 0 - height / 2
+            });
+
+
+        } else {
+            $('#background').css({
+                'width': 'auto',
+                'height': '100%',
+                'margin-left': 0 - width / 2,
+                'margin-top': 0 - height / 2
+            });
+        }
+    }
+	</script> 
+ </head>
+  <body>
+    <div id="navbar">
+    </div>
+    <img src="./image/1.jpg" id="background">
+  </body>
+</html>

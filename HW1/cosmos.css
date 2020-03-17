@@ -14,7 +14,11 @@ html, body {
   margin: 0;
   padding: 0;
 }
-
+img{
+  display:block;
+  width:100%;
+  height:auto;
+}
 section{
   position: relative;
   background-position: center,top;
@@ -113,21 +117,15 @@ section a h3{
   z-index:100
 }
 
-#p2_1{
-  position: absolute;
-  width:27%;
-  height:500px;
-  right:0;
-}
-#p2_2{
-  position: absolute;
-  width:27%;
-  height:500px;
+.container{
+  width:1500px;
   margin:0 auto;
+  text-align:center;
 }
-#p2_3{
-  position: absolute;
-  width:27%;
-  height:500px;
-  left:0;
+.card{
+  position:relative;
+  width:420px;
+  display: inline-block;
+  margin:15px;
 }
+

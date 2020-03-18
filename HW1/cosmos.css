@@ -27,18 +27,6 @@ section{
   width:100%;
   height:100%;
 }
-/*
-section::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: '';
-  width: 100%;
-  height: 100%;/*
-  background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
-  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
-	
-}*/
 
 #section01 h1 {
   position: absolute;
@@ -62,7 +50,7 @@ section::after {
 }
 
 #section03 {
-  background-image: url(image/3-1.png);
+  background-image: url(image/black.png);
 }
 
 #section04 {
@@ -83,9 +71,14 @@ section::after {
   white-space: nowrap;
 
 }
+
+.halo:hover{
+  filter: drop-shadow(5px 5px 30px  white); 
+}
+
 .demo a {
   position: absolute;
-  bottom: 70px;
+  bottom: 20px;
   left: 5%;
   z-index: 2;
   display: inline-block;/*
@@ -98,6 +91,36 @@ section::after {
   text-decoration: none;
  /* transition: opacity .3s;*/
 }
+
+#pg3_left{
+  position: absolute;
+  background-size: cover; /*Make the bk fullfill the screen*/
+  width: 100vw; 
+  height: 100vh;
+  margin-top: 20vh;
+  margin-left: 7vw;
+  height: 52vh;
+  width: 40vw;
+  z-index: 2;
+}
+
+#pg3_right{
+  opacity:0.5;
+  position: absolute;
+  background-size: cover; /*Make the bk fullfill the screen*/
+  width: 100vw; 
+  height: 100vh;
+  margin-top:10vh;
+  right:30px;
+  height:75vh;
+  width:75vw;
+  z-index:1;
+}
+.middle{
+ 
+  position:relative;
+}
+
 section a{
   padding-top:60px;
 }
@@ -134,9 +157,13 @@ section a h3{
   font-family:'abel';
   font-size:30px;
   color:white;
-  z-index:100
+  z-index:100;
+  text-decoration: none;
 }
-
+#manu a{
+  text-decoration: none;
+  color:white;
+}
 .container{
   width:1500px;
   margin:0 auto;
@@ -149,3 +176,53 @@ section a h3{
   margin:60px 15px;
 }
 
+#pg3_text_left{
+  position:absolute;
+  font-weight:lighter;
+  font-family:'abel';
+  font-size: 70px;
+  top:200px;
+  left:30px;
+  z-index:3;
+  color:white;
+}
+#pg3_text_timon{
+  opacity:0.5;
+  position:absolute;
+  font-weight:lighter;
+  font-family:'abel';
+  font-size: 70px;
+  top:70px;
+  right:600px;
+  z-index:3;
+  color:white;
+}
+
+#pg3_text_right{
+  position:absolute;
+  font-family:'abel';
+  font-size: 15px;
+  font-weight:lighter;
+  line-height:22px;
+  opacity:0.5;
+  top:200px;
+  right:130px;
+  z-index:3;
+  color:white;
+}
+.pg2_text{
+  position:absolute;
+  font-weight:lighter;
+  font-family:'abel';
+  font-size:200px;
+  color:white;
+  z-index=5;
+}
+#pg2_text_left{
+  left:5px;
+  top:100px;
+}
+#pg2_text_right{
+  left:300px;
+  top:320px;
+}

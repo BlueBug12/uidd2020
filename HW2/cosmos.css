@@ -47,6 +47,7 @@ section{
 
 #section02 {
   background-image: url(image/black.png);
+	overflow:hidden;  
 }
 
 #section03 {

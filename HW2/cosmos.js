@@ -13,3 +13,15 @@ $(document).ready(function(){
     $(this).css('animation-play-state','running')
   })
 })
+/*
+$(function(){
+  $('.expand').on('click touchstar',function(){
+    $('#section04').css('filter', 'grayscale(50%)')
+  })
+})*/
+
+$(function(){
+  $('.fade').hover(function(){
+    $(this).transition('fly down',300)
+  })
+})

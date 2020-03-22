@@ -31,14 +31,14 @@ section{
 #section01 h1 {
   position: absolute;
   font-family: 'Aileron';
-  top: 50%;
+  top: 45%;
   left: 50%;
   z-index: 2;
   font-weight:lighter;
   transform:translate(-50%,-50%);
   color: #fff;
   text-align: center;
-  font-size:150px;
+  font-size:170px;
   white-space: nowrap;
 }
 #section01 {
@@ -47,7 +47,10 @@ section{
 
 #section02 {
   background-image: url(image/black.png);
-	overflow:hidden;  
+	overflow:hidden; 
+  display:flex;
+  align-items:center;
+  justify-content:center; 
 }
 
 #section03 {
@@ -94,8 +97,6 @@ section{
 #pg3_left{
   position: absolute;
   background-size: cover;
-  width: 100vw; 
-  height: 100vh;
   margin-top: 20vh;
   margin-left: 7vw;
   height: 52vh;
@@ -135,10 +136,11 @@ section a h3{
   top: 50px;
   left:60px;
   z-index:100;
-
+  width:100px;
+  height:100px;
 }
 
-#manu{
+#menu{
   position: fixed;
   top:50px;
   right:80px;
@@ -149,18 +151,25 @@ section a h3{
   text-decoration: none;
 
 }
-#manu a{
+#menu a{
   text-decoration: none;
   color:white;
 }
 .container{
+	
+  
   width:1500px;
   margin:0 auto;
   text-align:center;
+  vertical-align: middle;
+  display: flex;
 }
 .card{
+
+
   position:relative;
   width:460px;
+  max-height:100%;
   display: inline-block;
   margin:60px 15px;
 }
@@ -207,23 +216,23 @@ section a h3{
 }
 #pg2_text_left{
   left:5px;
-  top:100px;	
+  top:160px;	
 	animation-direction: reverse;
 }
 #pg2_text_right{
   left:300px;
-  top:320px;	
+  top:460px;	
 }
 
-.circular_expand{
+.expand{
+  
   opacity:1;
-  color:transparent;
-  width: 1000px;
-  height:1000px;
+  color:black;
+  width: 500px;
+  height:500px;
   border-radius:50%;
-  transform:scale(0.5);
-  transition: all 350ms ease-in-out;
   vertical-align:middle;
+  z-index:5;
 }
 .circular_expand:hover{
   transform(10);
@@ -242,4 +251,9 @@ section a h3{
  }
 }
 
-
+.home{
+  width:100px;
+  height:100px;
+  background-size:cover;
+  background-image: url(image/arrow.png);
+}

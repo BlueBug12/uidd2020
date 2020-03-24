@@ -136,8 +136,6 @@ section a h3{
   top: 50px;
   left:60px;
   z-index:100;
-  width:100px;
-  height:100px;
 }
 
 #menu{
@@ -157,21 +155,17 @@ section a h3{
 }
 .container{
 	
-  
-  width:1500px;
+  position:absolute; 
+  width:100%;
   margin:0 auto;
   text-align:center;
   vertical-align: middle;
   display: flex;
+  justify-content: space-between;
 }
 .card{
+  width:30vw;
 
-
-  position:relative;
-  width:460px;
-  max-height:100%;
-  display: inline-block;
-  margin:60px 15px;
 }
 .pg3_text{
   position:absolute;
@@ -215,13 +209,11 @@ section a h3{
   animation:marquee 15s linear infinite;
 }
 #pg2_text_left{
-  left:5px;
-  top:160px;	
+  top:8vh;	
 	animation-direction: reverse;
 }
 #pg2_text_right{
-  left:300px;
-  top:460px;	
+  bottom:8vh;	
 }
 
 .expand{

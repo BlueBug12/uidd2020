@@ -135,7 +135,7 @@ section a h3{
   position: fixed;
   top: 50px;
   left:60px;
-  z-index:100;
+  z-index:5;
 }
 
 #menu{
@@ -243,9 +243,79 @@ section a h3{
  }
 }
 
-.home{
-  width:100px;
-  height:100px;
-  background-size:cover;
-  background-image: url(image/arrow.png);
+
+.hidden_text{
+  visibility:hidden; 
+  font-family :'abel';
+  font-size:20px;
+  color:white;
 }
+
+.hidden_text:hover{
+  visibility:visible;
+}
+
+.arrow{
+  position:absolute;
+  background-image: url(image/arrow.png);
+  background-size:cover;
+  width:42px;
+  height:75px;
+  z-index:100;
+  visibility:hidden;
+}
+.home{
+
+  color:white;
+  font-family:'abel';
+  font-size:30px;
+}
+.see{
+  visibility:'visible';
+}
+/*
+.arrow:hover{
+  animation-name:fadeInUp;
+	-webkit-animation-name: fadeInUp;
+}
+.arrow h3{
+  visibility:hidden;
+  color:white;
+  font-family:'abel';
+  font-size:30px;
+}
+.arrow:hover > h3{
+  z-index:10;
+  visibility:visible;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}*/
+
+

@@ -79,6 +79,7 @@ section{
 
 .halo:hover{
   filter: drop-shadow(5px 5px 30px  white); 
+  cursor:pointer;
 }
 
 .demo a {
@@ -203,7 +204,7 @@ section a h3{
   position:absolute;
   font-weight:lighter;
   font-family:'abel';
-  font-size:200px;
+  font-size:180px;
   color:white;
   z-index:5;
 	overflow:hidden;  
@@ -216,17 +217,7 @@ section a h3{
 #pg2_text_right{
   bottom:8vh;	
 }
-/*
-.expand{
-  
-  opacity:1;
-  color:black;
-  width: 500px;
-  height:500px;
-  border-radius:50%;
-  vertical-align:middle;
-  z-index:5;
-}*/
+
 .circular_expand:hover{
   transform(10);
 }
@@ -276,7 +267,7 @@ section a h3{
 }
 
 #section04{
- filter:grayscale(80%);
+ filter:grayscale(90%);
  transition:ease-in-out 1s;
 }
 .bounce{

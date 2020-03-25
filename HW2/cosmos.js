@@ -13,33 +13,6 @@ $(document).ready(function(){
     $(this).css('animation-play-state','running')
   })
 })
-/*
-$(function(){
-  $('.expand').on('click touchstar',function(){
-    $('#section04').css('filter', 'grayscale(50%)')
-  })
-})*/
-/*
-$(function(){
-  $('.fade').hover(function(){
-    $(this).transition('fly down',300)
-  })
-})*/
-/*
-$(function(){
- $('.arrow').mouseenter(function(){
-    $('.arrow').addClass('home')
-    $(this).removeClass('arrow')
- })
-})
-
-$(function(){
-  $('.home').mouseleave(function(){
-    console.log('hello')
-    $('.home').addClass('arrow')
-    $(this).removeClass('home')
-  })
-})*/
 $(function(){
   $('.home').on('mouseenter',function(){
     $('.arrow').removeClass('hidden transition')
@@ -61,17 +34,20 @@ $(function(){
     $('#see').addClass('home')
   })
 })
-
+let display=true
 $(function(){
   $('#reserve').on('click',function(){
-    $('#section04').css('filter','grayscale(0%)')
+    const style=display
+    ?$('#section04').css('filter','grayscale(0%)')
+    :$('#section04').css('filter','grayscale(90%)')
+    display=!display
   })
 })
 
 $(function(){
   $('#pg3_text_left').click(function(){
     $('#pg3_left').css('visibility','visible')
-    $('#pg3_left').addClass('animated fadeInLeft')
+    $('#pg3_left').toggleClass('animated fadeInLeft')
   })
 })
 

@@ -1,0 +1,206 @@
+html,body{
+  position:absolute;
+  height: 100%;
+  width:100%;
+  z-index:0;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+img{
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;	
+}
+
+#section_1{
+  position:relative;
+  background-color:#F4DF62;
+  bottom:0;
+  height:100%;
+  width:100%;
+  z-index:-1;
+  overflow:hidden;
+}
+#section_2{
+  position:relative;
+  bottom:0;
+  height:100%;
+  width:100%;
+  z-index:0;
+  overflow:hidden;
+}
+#section_3{
+
+}
+nav {
+  position:absolute;
+  margin: 15px 50px 0px 50px;
+  z-index:10;
+}
+nav a{
+  color: inherit;
+  font-size:19.5pt;
+  bottom:10px;
+  text-decoration:none;
+}
+#logo{
+  position:absolute;
+
+}
+
+#navbar{
+  position:absolute;
+  width:92%;
+  border-bottom:#799FB4 solid 3px;
+  margin:15px 4% 0px 4%;
+  
+}
+nav > ul{
+  position:absolute;
+  list-style:none;
+  right:0;
+  margin:0;
+  color:#799FB4;
+  padding:0;
+  bottom:10px
+
+}
+li{
+  margin:0 10px;
+}
+
+.nav-bg{
+  position:fixed;
+  height:80px;
+  width:100%;
+  background-color: #F7F6E4;
+  z-index:10;
+}
+
+#house{
+ position:absolute;
+ width:100%;
+ height:100%;
+ text-align: center;
+ 
+}
+#top-house{
+  position:absolute;
+  left:32vw;
+  z-index:2;
+  bottom:32vh;
+}
+#bottom-house{
+  position:absolute;
+  left:33vw;
+  bottom:14vh;
+  z-index:0;
+}
+
+#base{
+  position:absolute;
+  left:32vw;
+  bottom:4vh;
+  z-index:-1;
+}
+
+#topic{
+  position:absolute;
+  left:10vw;
+  bottom:25vh;
+  z-index:3;
+}
+#know-more{
+  position:absolute;
+  left:10vw;
+  bottom:20vh;
+  z-index:3;
+}
+#know-more:hover{
+  filter: drop-shadow(5px 5px 20px white);
+  cursor:pointer;
+}
+#houseworks{
+  position:absolute;
+  width:100%;
+  height:100%;
+  visibility:hidden;
+  z-index:1;
+}
+.works{
+  position:absolute;
+	animation-delay:700ms;
+}
+#w1{
+  top:50vh;
+  left:10vw;
+}
+#w2{
+  top:40vh;
+  left:30vw;
+}
+#w3{
+  top:50vh;
+  left:45vw;
+}
+#w4{
+  top:40vh;
+  left:70vw;
+}
+#w5{
+  top:50vh;
+  left:80vw;
+}
+#darker-bg{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background-color:gray;
+  z-index:3;
+  opacity:0.5;
+}
+
+#section_1_sub{
+  position:absolute;
+  width:100%;
+  height:100%;
+}
+
+#sub-section-2{
+  position:absolute;
+  width:50%;
+  height:100%;
+  background-color:blue;
+  z-index:1;
+}
+.pg2-house{
+  width:40%;
+  position:absolute;
+  height:100%;
+  left:35%;
+}
+#top2{
+  
+  top:25vh;
+  z-index:3;
+}
+#bottom2{
+
+  top:44vh;
+  z-index:2;
+}
+#base2{
+  width:41%;
+  top:55vh;
+  z-index:1;
+}
+
+#houseworks-pg2{
+	position:absolute;
+  width:35%;
+  z-index:1;
+}

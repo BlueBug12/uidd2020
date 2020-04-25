@@ -1,0 +1,77 @@
+html, body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: absolute;
+  margin: 15px 50px 0px 50px;
+  z-index: 10;
+}
+
+nav a {
+  color: inherit;
+  font-size: 19.5pt;
+  font-family: GenJyuuGothic-Medium;
+  bottom: 10px;
+  text-decoration: none;
+}
+
+#logo {
+  position: absolute;
+  bottom: 25%;
+}
+
+#navbar {
+  position: absolute;
+  width: 92%;
+  border-bottom: #799fb4 solid 3px;
+  margin: 15px 4% 0px 4%;
+}
+
+nav > ul {
+  position: absolute;
+  list-style: none;
+  right: 0;
+  margin: 0;
+  color: #799fb4;
+  padding: 0;
+  bottom: 10px;
+}
+
+li {
+  margin: 0 10px;
+}
+
+.nav-bg {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  background-color: #F7F6E4;
+  z-index: 10;
+}
+
+#section_ {
+  position: relative;
+  background-color: #F4DF62;
+  height: 100vh;
+  width: 65vw;
+  z-index: -1;
+}
+
+#floorplan {
+  position: absolute;
+
+  top:20%;
+
+  height: 70vh;
+  width: 65vw;
+  z-index: -1;
+}
